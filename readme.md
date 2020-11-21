@@ -2,24 +2,23 @@ eBPF
 -------
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/cilium/ebpf)](https://pkg.go.dev/github.com/cilium/ebpf)
 
-eBPF is a pure Go library that provides utilities for loading, compiling, and debugging eBPF programs. It has minimal external dependencies and is intended to be used in long running processes.
+eBPF - это чистая библиотека Go, которая предоставляет утилиты для загрузки, компиляции и отладки программ eBPF. Он имеет минимальные внешние зависимости и предназначен для использования в длительных процессах.
 
 * [asm](https://pkg.go.dev/github.com/cilium/ebpf/asm) contains a basic assembler.
 * [link](https://pkg.go.dev/github.com/cilium/ebpf/link) allows attaching eBPF to various hooks.
 * [perf](https://pkg.go.dev/github.com/cilium/ebpf/perf) allows reading from a PERF_EVENT_ARRAY.
 * [cmd/bpf2go](https://pkg.go.dev/github.com/cilium/ebpf/cmd/bpf2go) allows embedding eBPF in Go.
 
-The library is maintained by [Cloudflare](https://www.cloudflare.com) and [Cilium](https://www.cilium.io). Feel free to [join](https://cilium.herokuapp.com/) the [libbpf-go](https://cilium.slack.com/messages/libbpf-go) channel on Slack.
+Библиотека поддерживается [Cloudflare](https://www.cloudflare.com) и [Cilium](https://www.cilium.io). 
+## Статус
 
-## Current status
+Пакет готов к продакшену, но **API нестабилен сейчас**. 
+Ожидайте обновления своего кода, если хотите использовать пакет.
 
-The package is production ready, but **the API is explicitly unstable
-right now**. Expect to update your code if you want to follow along.
+## Зависимости
 
-## Requirements
-
-* A version of Go that is [supported by upstream](https://golang.org/doc/devel/release.html#policy)
-* Linux 4.9, 4.19 or 5.4 (versions in-between should work, but are not tested)
+* Последние версия go [с поддержкой upstream](https://golang.org/doc/devel/release.html#policy)
+* Linux 4.9, 4.19 bkb 5.4 (промежуточные версии должны работать, но никто их не тестировал)
 
 ## Useful resources
 
